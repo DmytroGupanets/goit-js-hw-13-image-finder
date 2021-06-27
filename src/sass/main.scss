@@ -1,0 +1,88 @@
+body {
+  background-color: rgba(212, 255, 242, 0.473);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  margin-top: 80px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 1215px;
+}
+
+.search-form {
+  z-index: 3;
+  position: fixed;
+  left: 50%;
+  top: 40px;
+  transform: translate(-50%, -50%);
+  width: 1215px;
+  height: 60px;
+  background: #3faf6c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #59a7f5, #3faf6c); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #59a7f5,
+    #3faf6c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.search-form__input {
+  width: 250px;
+  height: 30px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-top: -15px;
+  padding: 0;
+}
+
+.gallery__item {
+  margin-left: 15px;
+  margin-top: 15px;
+  width: calc((100% - 45px) / 3);
+}
+
+.photo-card {
+  border: 1px solid #212121;
+  border-radius: 5px;
+  background-color: white;
+  overflow: hidden;
+  cursor: zoom-in;
+  transition: box-shadow 250ms linear, transform 250ms linear;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.02);
+    box-shadow: 10px 10px 9px 0px rgba(0, 0, 0, 0.55);
+    -webkit-box-shadow: 10px 10px 9px 0px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: 10px 10px 9px 0px rgba(0, 0, 0, 0.55);
+  }
+}
+
+.stats {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.stats-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
